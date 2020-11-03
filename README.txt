@@ -17,6 +17,8 @@ the second part is a program that generate a table for the teaching assistance o
 to test part2 write 
 "(schedule-tas -list of ta datatype (which represents teaching assistant and his empty table's slots)-  -list of int (which represents the index of the empty slots in the table)- ) 
 in the interactions window.
+
+
 e.g. (schedule-tas (list (make-ta "A" 1 (list 3)) ; teaching assistant that has one empty slot with index 3
                          (make-ta "B" 1 (list 2))\n
                          (make-ta "C" 1 (list 1))\n
