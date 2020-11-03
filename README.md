@@ -15,22 +15,28 @@ It is two parts project, the first part is an application on cyclic data;
 the second part is a program that generate a table for the teaching assistance on a particular course 
 
 to test part2 write 
+
+
 "(schedule-tas -list of ta datatype (which represents teaching assistant and his empty table's slots)-  -list of int (which represents the index of the empty slots in the table)- ) 
+
+
 in the interactions window.
 
 
-e.g. (schedule-tas (list (make-ta "A" 1 (list 3)) ; teaching assistant that has one empty slot with index 3
-                         (make-ta "B" 1 (list 2))\n
-                         (make-ta "C" 1 (list 1))\n
-                         (make-ta "D" 1 (list 5))\n
-                         (make-ta "E" 1 (list 6))\n
-                         (make-ta "F" 1 (list 4))\n
-                         (make-ta "G" 1 (list 7))) (list 1 2 3 4 5 6 7) ; the empty slots in the table)
+e.g. (schedule-tas (list (make-ta "A" 1 (list 3))
+                         (make-ta "B" 1 (list 2))
+                         (make-ta "C" 1 (list 1))
+                         (make-ta "D" 1 (list 5))
+                         (make-ta "E" 1 (list 6))
+                         (make-ta "F" 1 (list 4))
+                         (make-ta "G" 1 (list 7))) (list 1 2 3 4 5 6 7))
                          
                          
 the output will be a list of assignments (a list of pairs of the TA and his assigned slot)
-e.g. (list\n
-           (make-assignment "C" 1)  ; the Teaching assistance named "C" is assigned to the slot 1
+
+
+e.g. (list
+           (make-assignment "C" 1) 
            (make-assignment "B" 2)
            (make-assignment "A" 3)
            (make-assignment "F" 4)
