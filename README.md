@@ -23,24 +23,24 @@ to test part2 write
 in the interactions window.
 
 
-e.g. (schedule-tas (list (make-ta "A" 1 (list 3))
-                         (make-ta "B" 1 (list 2))
-                         (make-ta "C" 1 (list 1))
-                         (make-ta "D" 1 (list 5))
-                         (make-ta "E" 1 (list 6))
-                         (make-ta "F" 1 (list 4))
-                         (make-ta "G" 1 (list 7))) (list 1 2 3 4 5 6 7))
+1. e.g. (schedule-tas (list (make-ta "A" 1 (list 3))
+2.                          (make-ta "B" 1 (list 2))
+3.                          (make-ta "C" 1 (list 1))
+4.                          (make-ta "D" 1 (list 5))
+5.                          (make-ta "E" 1 (list 6))
+6.                          (make-ta "F" 1 (list 4))
+7.                          (make-ta "G" 1 (list 7))) (list 1 2 3 4 5 6 7))
                          
                          
 the output will be a list of assignments (a list of pairs of the TA and his assigned slot)
 
 
-e.g. (list
-           (make-assignment "C" 1) 
-           (make-assignment "B" 2)
-           (make-assignment "A" 3)
-           (make-assignment "F" 4)
-           (make-assignment "D" 5)
-           (make-assignment "E" 6)
-           (make-assignment "G" 7))
+1. e.g. (list
+2.           (make-assignment "C" 1) 
+3.           (make-assignment "B" 2)
+4.           (make-assignment "A" 3)
+5.           (make-assignment "F" 4)
+6.           (make-assignment "D" 5)
+7.           (make-assignment "E" 6)
+8.           (make-assignment "G" 7))
 
